@@ -1,0 +1,285 @@
+/* =========================
+   NOIRE.STORE
+   Main Stylesheet
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f3;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 80px;
+    padding: 0 6%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+/* =========================
+   HERO
+========================= */
+
+main > section:first-child {
+    min-height: 650px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #e9e7e2;
+}
+
+main > section:first-child h2 {
+    font-size: clamp(55px, 9vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -6px;
+    margin-bottom: 25px;
+}
+
+main > section:first-child p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+main > section:first-child a {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+main > section:first-child a:hover {
+    background: #333;
+}
+
+/* =========================
+   SHOP
+========================= */
+
+#shop {
+    padding: 100px 7%;
+    background: #fff;
+}
+
+#shop > h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+}
+
+#shop article {
+    background: #f4f3f0;
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Product image placeholder */
+
+#shop article::before {
+    content: "PRODUCT IMAGE";
+    height: 380px;
+    background: #dedcd6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+#shop article h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+#shop article p {
+    color: #666;
+    font-size: 14px;
+}
+
+#shop article p:nth-of-type(1) {
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#shop button {
+    margin-top: 18px;
+    padding: 13px 20px;
+    background: #111;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#shop button:hover {
+    background: #333;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    padding: 110px 7%;
+    text-align: center;
+    background: #f5f5f3;
+}
+
+#about h2 {
+    font-size: 50px;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: auto;
+    color: #666;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    padding: 90px 7%;
+    text-align: center;
+    background: #fff;
+}
+
+#contact h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    color: #666;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: #fff;
+    padding: 50px 7%;
+    text-align: center;
+}
+
+footer p {
+    color: #888;
+    font-size: 12px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main > section:first-child {
+        min-height: 550px;
+        padding: 50px 25px;
+    }
+
+    main > section:first-child h2 {
+        font-size: 58px;
+        letter-spacing: -4px;
+    }
+
+    #shop {
+        padding: 70px 20px;
+    }
+
+    #shop > h2 {
+        font-size: 38px;
+    }
+
+    #shop article::before {
+        height: 300px;
+    }
+
+    #about {
+        padding: 80px 25px;
+    }
+
+    #about h2 {
+        font-size: 40px;
+    }
+}
