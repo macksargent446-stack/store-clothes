@@ -9,77 +9,1081 @@
 
 <body>
 
-    <header>
-        <h1>NOIRE.STORE</h1>
+<header class="nav">
 
-        <nav>
-            <a href="#shop">Shop</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <div class="logo">NOIRE.STORE</div>
 
-    <main>
+  <ul class="navlinks">
+    <li><a href="#shop">SHOP</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#sizes">SIZES</a></li>
+    <li><a href="#shipping">SHIPPING</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
 
-        <section>
-            <h2>NOIRE.STORE</h2>
-            <p>Modern everyday clothing.</p>
-            <a href="#shop">Shop Now</a>
-        </section>
+  <button class="cartbtn" onclick="openCart()">
+    BAG (<span id="count">0</span>)
+  </button>
 
-        <section id="shop">
-            <h2>Shop</h2>
+</header>
 
-            <article>
-                <h3>NOIRE TEE 01</h3>
-                <p>$49 AUD</p>
-                <p>Product description goes here.</p>
-                <button onclick="addToCart('NOIRE TEE 01', 49)">
-                    Add to Cart
-                </button>
-            </article>
 
-            <article>
-                <h3>NOIRE TEE 02</h3>
-                <p>$49 AUD</p>
-                <p>Product description goes here.</p>
-                <button onclick="addToCart('NOIRE TEE 02', 49)">
-                    Add to Cart
-                </button>
-            </article>
+<!-- HERO -->
 
-            <article>
-                <h3>NOIRE TEE 03</h3>
-                <p>$59 AUD</p>
-                <p>Product description goes here.</p>
-                <button onclick="addToCart('NOIRE TEE 03', 59)">
-                    Add to Cart
-                </button>
-            </article>
+<section class="hero">
 
-        </section>
+  <div>
 
-        <section id="about">
-            <h2>About NOIRE</h2>
-            <p>
-                NOIRE.STORE is an independent clothing brand
-                focused on simple, wearable pieces.
-            </p>
-        </section>
+    <div class="eyebrow">
+      NOIRE.STORE / CLOTHING
+    </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your@email.com</p>
-        </section>
+    <h1>
+      WEAR IT
+      <em>YOUR WAY.</em>
+    </h1>
 
-    </main>
+    <p>
+      Clean, contemporary clothing built around simple silhouettes,
+      subtle branding and pieces designed for everyday wear.
+    </p>
 
-    <footer>
-        <p>© 2026 NOIRE.STORE</p>
-    </footer>
+    <a class="primary" href="#shop">
+      SHOP THE COLLECTION
+    </a>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+  </div>
 
+
+  <div class="visual">
+
+    <div class="glow"></div>
+
+    <div class="hero-shirt">
+
+      <div class="hero-shirt-body"></div>
+      <div class="hero-shirt-left"></div>
+      <div class="hero-shirt-right"></div>
+      <div class="hero-shirt-neck"></div>
+
+      <div class="hero-shirt-logo">
+        NOIRE
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<div class="marquee">
+
+  <span>NOIRE.STORE</span>
+  <span>EVERYDAY CLOTHING</span>
+  <span>NEW COLLECTION</span>
+  <span>NOIRE.STORE</span>
+  <span>EVERYDAY CLOTHING</span>
+
+</div>
+
+
+<!-- SHOP -->
+
+<section class="white" id="shop">
+
+  <div class="sectionhead">
+
+    <div>
+
+      <div class="label">
+        THE COLLECTION
+      </div>
+
+      <h2>
+        Start with the essentials.
+      </h2>
+
+    </div>
+
+    <p>
+      A focused first collection of clean everyday T-shirts.
+      Product information can be replaced with your final
+      garment specifications before launch.
+    </p>
+
+  </div>
+
+
+  <div class="products">
+
+
+    <!-- PRODUCT 1 -->
+
+    <article class="card">
+
+      <div class="productimage">
+
+        <div class="product-shirt">
+
+          <div class="product-body"></div>
+          <div class="product-sleeve-left"></div>
+          <div class="product-sleeve-right"></div>
+          <div class="product-neck"></div>
+
+          <div class="product-logo">
+            NOIRE
+          </div>
+
+        </div>
+
+      </div>
+
+      <h3>
+        CORE TEE — BLACK
+      </h3>
+
+      <div class="product-info">
+        <span>Relaxed fit</span>
+        <span>Black</span>
+      </div>
+
+      <div class="cardbottom">
+
+        <strong class="price">
+          $49 AUD
+        </strong>
+
+        <button
+          class="add"
+          onclick="openProduct('CORE TEE — BLACK',49,'Black','NOIRE chest mark')">
+          VIEW
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUCT 2 -->
+
+    <article class="card">
+
+      <div class="productimage">
+
+        <div class="product-shirt">
+
+          <div
+            class="product-body"
+            style="background:#f7f7f5">
+          </div>
+
+          <div
+            class="product-sleeve-left"
+            style="background:#f7f7f5">
+          </div>
+
+          <div
+            class="product-sleeve-right"
+            style="background:#f7f7f5">
+          </div>
+
+          <div
+            class="product-neck"
+            style="background:#e7e4dd">
+          </div>
+
+          <div
+            class="product-logo"
+            style="color:#111">
+            NOIRE
+          </div>
+
+        </div>
+
+      </div>
+
+      <h3>
+        CORE TEE — WHITE
+      </h3>
+
+      <div class="product-info">
+        <span>Relaxed fit</span>
+        <span>White</span>
+      </div>
+
+      <div class="cardbottom">
+
+        <strong class="price">
+          $49 AUD
+        </strong>
+
+        <button
+          class="add"
+          onclick="openProduct('CORE TEE — WHITE',49,'White','NOIRE chest mark')">
+          VIEW
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUCT 3 -->
+
+    <article class="card">
+
+      <div class="productimage">
+
+        <div class="product-shirt">
+
+          <div class="product-body"></div>
+          <div class="product-sleeve-left"></div>
+          <div class="product-sleeve-right"></div>
+          <div class="product-neck"></div>
+
+          <div class="product-logo large">
+            N / 01
+          </div>
+
+        </div>
+
+      </div>
+
+      <h3>
+        N/01 GRAPHIC TEE
+      </h3>
+
+      <div class="product-info">
+        <span>Oversized fit</span>
+        <span>Black</span>
+      </div>
+
+      <div class="cardbottom">
+
+        <strong class="price">
+          $59 AUD
+        </strong>
+
+        <button
+          class="add"
+          onclick="openProduct('N/01 GRAPHIC TEE',59,'Black','Back graphic')">
+          VIEW
+        </button>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="feature" id="about">
+
+  <div class="darkvisual">
+
+    <div class="glow"></div>
+
+    <div class="hero-shirt feature-shirt">
+
+      <div class="hero-shirt-body"></div>
+      <div class="hero-shirt-left"></div>
+      <div class="hero-shirt-right"></div>
+      <div class="hero-shirt-neck"></div>
+
+      <div class="hero-shirt-logo">
+        NOIRE
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="featuretext">
+
+    <div class="label">
+      THE NOIRE FIT
+    </div>
+
+    <h2>
+      Simple.<br>
+      Relaxed.<br>
+      Wearable.
+    </h2>
+
+    <p>
+      NOIRE is built around everyday pieces rather than
+      unnecessary complexity. The collection focuses on
+      clean shapes, understated branding and clothing that
+      can be worn your way.
+    </p>
+
+    <div class="detailgrid">
+
+      <div class="detail">
+        <small>FIT</small>
+        <strong>Relaxed</strong>
+      </div>
+
+      <div class="detail">
+        <small>STYLE</small>
+        <strong>Everyday</strong>
+      </div>
+
+      <div class="detail">
+        <small>DESIGN</small>
+        <strong>Minimal</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SIZE GUIDE -->
+
+<section class="size-section" id="sizes">
+
+  <div class="sectionhead">
+
+    <div>
+
+      <div class="label">
+        SIZE GUIDE
+      </div>
+
+      <h2>
+        Find your fit.
+      </h2>
+
+    </div>
+
+    <p>
+      These measurements are placeholders for the first
+      website version. Replace them with the measurements
+      supplied by your actual manufacturer.
+    </p>
+
+  </div>
+
+
+  <table class="size-table">
+
+    <thead>
+
+      <tr>
+        <th>SIZE</th>
+        <th>CHEST</th>
+        <th>LENGTH</th>
+        <th>SHOULDER</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>S</td>
+        <td>52 cm</td>
+        <td>70 cm</td>
+        <td>48 cm</td>
+      </tr>
+
+      <tr>
+        <td>M</td>
+        <td>55 cm</td>
+        <td>72 cm</td>
+        <td>50 cm</td>
+      </tr>
+
+      <tr>
+        <td>L</td>
+        <td>58 cm</td>
+        <td>74 cm</td>
+        <td>52 cm</td>
+      </tr>
+
+      <tr>
+        <td>XL</td>
+        <td>61 cm</td>
+        <td>76 cm</td>
+        <td>54 cm</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+  <p class="size-note">
+    *Measurements shown are website placeholders and must
+    be replaced with the actual measurements of your garments.
+  </p>
+
+</section>
+
+
+<!-- BRAND STATEMENT -->
+
+<section class="dark">
+
+  <div
+    class="label"
+    style="color:#888">
+    THE IDEA
+  </div>
+
+  <h2>
+    LESS NOISE. MORE NOIRE.
+  </h2>
+
+  <p>
+    Clean pieces. Straightforward information.
+    No fake stories, no unnecessary hype.
+  </p>
+
+</section>
+
+
+<!-- SHIPPING -->
+
+<section class="info" id="shipping">
+
+  <div class="sectionhead">
+
+    <div>
+
+      <div class="label">
+        BEFORE YOU BUY
+      </div>
+
+      <h2>
+        Clear information.
+      </h2>
+
+    </div>
+
+  </div>
+
+
+  <div class="info-grid">
+
+    <div class="info-box">
+
+      <h3>
+        Shipping
+      </h3>
+
+      <p>
+        Shipping methods, costs and estimated delivery
+        times will be displayed before purchase.
+        Replace this text with your actual shipping
+        options and timeframes.
+      </p>
+
+    </div>
+
+
+    <div class="info-box">
+
+      <h3>
+        Returns
+      </h3>
+
+      <p>
+        Publish your final returns process here.
+        Consumer guarantees under Australian Consumer
+        Law apply where relevant.
+      </p>
+
+    </div>
+
+
+    <div class="info-box">
+
+      <h3>
+        Product information
+      </h3>
+
+      <p>
+        Final fabric composition, garment measurements,
+        care instructions and country-of-origin information
+        should match the actual products before launch.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section>
+
+  <div class="label">
+    CUSTOMER REVIEWS
+  </div>
+
+  <h2>
+    Real experiences only.
+  </h2>
+
+  <div class="reviewbox">
+
+    Customer reviews will appear here after genuine
+    customers have purchased and reviewed NOIRE.STORE
+    products.
+
+    <br><br>
+
+    No invented reviews are displayed.
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="white" id="faq">
+
+  <div class="label">
+    QUESTIONS
+  </div>
+
+  <h2>
+    Frequently asked.
+  </h2>
+
+
+  <div class="faq">
+
+    <details>
+
+      <summary>
+        What is NOIRE.STORE?
+      </summary>
+
+      <p>
+        NOIRE.STORE is a contemporary clothing brand
+        focused on clean everyday pieces and simple design.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        What sizes are available?
+      </summary>
+
+      <p>
+        The first collection currently uses S, M, L and XL.
+        Replace this with the actual sizes available for
+        each garment.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        How do I contact NOIRE.STORE?
+      </summary>
+
+      <p>
+        Email: YOUR-REAL-EMAIL@example.com<br>
+        Phone: YOUR-REAL-PHONE<br>
+        Business address: YOUR-REAL-BUSINESS-ADDRESS
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        How do returns work?
+      </summary>
+
+      <p>
+        Your final returns process will be published here.
+        Consumer guarantees under Australian Consumer Law
+        apply where relevant and cannot be excluded by a
+        website policy.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Are the reviews genuine?
+      </summary>
+
+      <p>
+        Only genuine customer experiences should be
+        published as reviews.
+      </p>
+
+    </details>
+
+  </div>
+
+</section>
+
+
+<!-- LEGAL -->
+
+<section class="legal" id="legal">
+
+  <div class="label">
+    STORE INFORMATION
+  </div>
+
+  <h2>
+    Policies.
+  </h2>
+
+
+  <div class="legal-content">
+
+    <h3>
+      Australian Consumer Law
+    </h3>
+
+    <p>
+      NOIRE.STORE aims to provide accurate product,
+      pricing, shipping and promotional information.
+      Nothing on this website is intended to exclude,
+      restrict or modify consumer guarantees or other
+      rights that cannot lawfully be excluded.
+    </p>
+
+
+    <h3>
+      Privacy
+    </h3>
+
+    <p>
+      Replace this placeholder with your actual privacy
+      policy before launch. It should explain what personal
+      information you collect, why you collect it, how it
+      is used and disclosed, and how customers can contact
+      you about privacy matters.
+    </p>
+
+
+    <h3>
+      Terms
+    </h3>
+
+    <p>
+      Replace this placeholder with your final terms of
+      sale, including ordering, payment, delivery,
+      cancellations, returns and contact information.
+    </p>
+
+
+    <h3>
+      Business details
+    </h3>
+
+    <p>
+      Legal/business name: YOUR BUSINESS NAME<br>
+      ABN: YOUR ABN<br>
+      Email: YOUR REAL BUSINESS EMAIL<br>
+      Phone: YOUR REAL BUSINESS PHONE<br>
+      Business address: YOUR REAL BUSINESS ADDRESS
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footergrid">
+
+    <div>
+
+      <h3>
+        NOIRE.STORE
+      </h3>
+
+      <p>
+        Contemporary clothing.
+        Straightforward information.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h3>
+        Store
+      </h3>
+
+      <ul>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#sizes">Size Guide</a></li>
+        <li><a href="#shipping">Shipping</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+    </div>
+
+
+    <div>
+
+      <h3>
+        Legal
+      </h3>
+
+      <ul>
+        <li><a href="#legal">Privacy</a></li>
+        <li><a href="#legal">Terms</a></li>
+        <li><a href="#legal">Consumer information</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <div class="footerbottom">
+
+    © 2026 NOIRE.STORE.
+    Replace placeholder business details before launch.
+
+  </div>
+
+</footer>
+
+
+<!-- CART -->
+
+<div class="overlay" id="cartOverlay">
+
+  <div class="cart">
+
+    <div class="carthead">
+
+      <strong>
+        YOUR BAG
+      </strong>
+
+      <button onclick="closeCart()">
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      class="cartitems"
+      id="cartItems">
+    </div>
+
+
+    <div class="carttotal">
+
+      <strong>
+        TOTAL
+        <span
+          style="float:right"
+          id="total">
+          $0 AUD
+        </span>
+      </strong>
+
+      <button
+        class="checkoutbtn"
+        onclick="checkout()">
+
+        CONTINUE TO CHECKOUT
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- PRODUCT MODAL -->
+
+<div
+  class="product-modal"
+  id="productModal">
+
+  <div class="product-modal-inner">
+
+    <div class="modal-top">
+
+      <strong>
+        NOIRE.STORE
+      </strong>
+
+      <button
+        class="close"
+        onclick="closeProduct()">
+        × CLOSE
+      </button>
+
+    </div>
+
+
+    <div class="product-detail-grid">
+
+      <div class="modal-image">
+
+        <div class="product-shirt">
+
+          <div
+            class="product-body"
+            id="modalShirtBody">
+          </div>
+
+          <div
+            class="product-sleeve-left"
+            id="modalSleeveLeft">
+          </div>
+
+          <div
+            class="product-sleeve-right"
+            id="modalSleeveRight">
+          </div>
+
+          <div
+            class="product-neck"
+            id="modalNeck">
+          </div>
+
+          <div
+            class="product-logo"
+            id="modalLogo">
+            NOIRE
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="modal-info">
+
+        <div class="label">
+          NOIRE COLLECTION
+        </div>
+
+        <h2 id="modalName">
+          CORE TEE
+        </h2>
+
+        <strong
+          class="price"
+          id="modalPrice">
+          $49 AUD
+        </strong>
+
+        <p id="modalDescription">
+          Clean everyday T-shirt with a relaxed silhouette
+          and understated NOIRE branding.
+        </p>
+
+
+        <div class="option-title">
+          SIZE
+        </div>
+
+        <div class="size-options">
+
+          <button
+            class="size-option"
+            onclick="selectSize(this,'S')">
+            S
+          </button>
+
+          <button
+            class="size-option"
+            onclick="selectSize(this,'M')">
+            M
+          </button>
+
+          <button
+            class="size-option"
+            onclick="selectSize(this,'L')">
+            L
+          </button>
+
+          <button
+            class="size-option"
+            onclick="selectSize(this,'XL')">
+            XL
+          </button>
+
+        </div>
+
+
+        <button
+          class="checkoutbtn full-add"
+          onclick="addSelectedProduct()">
+
+          ADD TO BAG
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- CHECKOUT -->
+
+<div
+  class="modal"
+  id="checkoutModal">
+
+  <div class="modalinner">
+
+    <div
+      style="
+      display:flex;
+      justify-content:space-between;
+      align-items:center">
+
+      <strong>
+        NOIRE.STORE CHECKOUT
+      </strong>
+
+      <button
+        class="close"
+        onclick="closeCheckout()">
+        ← BACK
+      </button>
+
+    </div>
+
+
+    <div class="checkoutgrid">
+
+      <div>
+
+        <div class="box">
+
+          <h3>
+            Contact
+          </h3>
+
+          <input
+            type="email"
+            placeholder="Email address">
+
+        </div>
+
+
+        <div class="box">
+
+          <h3>
+            Delivery
+          </h3>
+
+          <input
+            placeholder="Full name">
+
+          <input
+            placeholder="Address">
+
+          <input
+            placeholder="Suburb">
+
+          <input
+            placeholder="State">
+
+          <input
+            placeholder="Postcode">
+
+        </div>
+
+
+        <div class="box">
+
+          <h3>
+            Payment
+          </h3>
+
+          <div class="notice">
+
+            Payment integration is not connected yet.
+            Before accepting real orders, connect a
+            secure payment provider and test the complete
+            order flow.
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <div class="box">
+
+          <h3>
+            Order summary
+          </h3>
+
+          <div id="summary"></div>
+
+          <hr
+            style="
+            border:0;
+            border-top:1px solid #ddd;
+            margin:18px 0">
+
+          <strong>
+
+            TOTAL
+
+            <span
+              style="float:right"
+              id="summaryTotal">
+              $0 AUD
+            </span>
+
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 </body>
 </html>
